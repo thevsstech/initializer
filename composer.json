@@ -1,0 +1,20 @@
+{
+  "require": {
+    "php": "^8.1"
+  },
+  "name": "nova-tech/initializer",
+  "version": "1.0.2",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "NovaTech\\Initializer\\": "src/",
+      "NovaTech\\Tests\\Initializer\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Vahit Serif Saglam",
+      "email": "admin@thevss.tech"
+    }
+  ]
+}
