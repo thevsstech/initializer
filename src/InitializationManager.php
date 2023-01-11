@@ -270,7 +270,7 @@ class InitializationManager
      * @return void
      * @throws \Exception
      */
-    public function run(array $groups = [])
+    public function run(array $groups = [], array $payload = [])
     {
 
         $tests =  $this->orderFixturesByDependencies(
@@ -282,6 +282,7 @@ class InitializationManager
          * @var Initializer[] $tests
          */
         foreach ($tests as $test) {
+            $test->payload = $payload;
             yield ['event' => 'event.before_initialize', 'test' => $test];
            try{
                $test->initialize();
