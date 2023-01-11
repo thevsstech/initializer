@@ -3,7 +3,7 @@
     "php": "^8.1"
   },
   "name": "nova-tech/initializer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "autoload": {
     "psr-4": {
